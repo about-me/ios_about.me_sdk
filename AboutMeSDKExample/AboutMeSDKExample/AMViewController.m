@@ -32,6 +32,8 @@
     [aboutme signInWithUsername:[username text] andPassword:[password text] onComplete:^(BOOL success) {
         if (success) {
             output.text = [aboutme.currentUser description];
+        } else {
+            output.text = @"Login failed!  :(";
         }
     }];
 }
