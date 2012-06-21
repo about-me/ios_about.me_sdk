@@ -1,0 +1,356 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C0FB91E1593E2C100EF06AB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C0FB91D1593E2C100EF06AB /* UIKit.framework */; };
+		0C0FB9201593E2C100EF06AB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C0FB91F1593E2C100EF06AB /* Foundation.framework */; };
+		0C0FB9221593E2C100EF06AB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C0FB9211593E2C100EF06AB /* CoreGraphics.framework */; };
+		0C0FB9281593E2C100EF06AB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0C0FB9261593E2C100EF06AB /* InfoPlist.strings */; };
+		0C0FB92A1593E2C100EF06AB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C0FB9291593E2C100EF06AB /* main.m */; };
+		0C0FB92E1593E2C100EF06AB /* AMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C0FB92D1593E2C100EF06AB /* AMAppDelegate.m */; };
+		0C0FB9451593E35F00EF06AB /* libAboutMeSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C0FB9421593E34000EF06AB /* libAboutMeSDK.a */; };
+		0C0FB9471593E51000EF06AB /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C0FB9461593E51000EF06AB /* SystemConfiguration.framework */; };
+		0C0FB9491593E52500EF06AB /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C0FB9481593E52500EF06AB /* Security.framework */; };
+		0C4B1BA41593E7EE006DC25A /* AMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C4B1BA21593E7EE006DC25A /* AMViewController.m */; };
+		0C4B1BA51593E7EE006DC25A /* AMViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4B1BA31593E7EE006DC25A /* AMViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0C0FB9411593E34000EF06AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C0FB93A1593E33F00EF06AB /* AboutMeSDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0C0FB8A61593AC8300EF06AB;
+			remoteInfo = AboutMeSDK;
+		};
+		0C0FB9431593E35700EF06AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C0FB93A1593E33F00EF06AB /* AboutMeSDK.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 0C0FB8A51593AC8300EF06AB;
+			remoteInfo = AboutMeSDK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0C0FB9191593E2C100EF06AB /* AboutMeSDKExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AboutMeSDKExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C0FB91D1593E2C100EF06AB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0C0FB91F1593E2C100EF06AB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0C0FB9211593E2C100EF06AB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0C0FB9251593E2C100EF06AB /* AboutMeSDKExample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AboutMeSDKExample-Info.plist"; sourceTree = "<group>"; };
+		0C0FB9271593E2C100EF06AB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0C0FB9291593E2C100EF06AB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0C0FB92B1593E2C100EF06AB /* AboutMeSDKExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AboutMeSDKExample-Prefix.pch"; sourceTree = "<group>"; };
+		0C0FB92C1593E2C100EF06AB /* AMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AMAppDelegate.h; sourceTree = "<group>"; };
+		0C0FB92D1593E2C100EF06AB /* AMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMAppDelegate.m; sourceTree = "<group>"; };
+		0C0FB93A1593E33F00EF06AB /* AboutMeSDK.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AboutMeSDK.xcodeproj; path = ../../AboutMeSDK/AboutMeSDK.xcodeproj; sourceTree = "<group>"; };
+		0C0FB9461593E51000EF06AB /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		0C0FB9481593E52500EF06AB /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		0C4B1BA11593E7EE006DC25A /* AMViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMViewController.h; sourceTree = "<group>"; };
+		0C4B1BA21593E7EE006DC25A /* AMViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMViewController.m; sourceTree = "<group>"; };
+		0C4B1BA31593E7EE006DC25A /* AMViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AMViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0C0FB9161593E2C100EF06AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C0FB9491593E52500EF06AB /* Security.framework in Frameworks */,
+				0C0FB9471593E51000EF06AB /* SystemConfiguration.framework in Frameworks */,
+				0C0FB9451593E35F00EF06AB /* libAboutMeSDK.a in Frameworks */,
+				0C0FB91E1593E2C100EF06AB /* UIKit.framework in Frameworks */,
+				0C0FB9201593E2C100EF06AB /* Foundation.framework in Frameworks */,
+				0C0FB9221593E2C100EF06AB /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0C0FB90E1593E2C100EF06AB = {
+			isa = PBXGroup;
+			children = (
+				0C0FB9231593E2C100EF06AB /* AboutMeSDKExample */,
+				0C0FB91C1593E2C100EF06AB /* Frameworks */,
+				0C0FB91A1593E2C100EF06AB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0C0FB91A1593E2C100EF06AB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0C0FB9191593E2C100EF06AB /* AboutMeSDKExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0C0FB91C1593E2C100EF06AB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0C0FB9481593E52500EF06AB /* Security.framework */,
+				0C0FB9461593E51000EF06AB /* SystemConfiguration.framework */,
+				0C0FB91D1593E2C100EF06AB /* UIKit.framework */,
+				0C0FB91F1593E2C100EF06AB /* Foundation.framework */,
+				0C0FB9211593E2C100EF06AB /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0C0FB9231593E2C100EF06AB /* AboutMeSDKExample */ = {
+			isa = PBXGroup;
+			children = (
+				0C0FB92C1593E2C100EF06AB /* AMAppDelegate.h */,
+				0C0FB92D1593E2C100EF06AB /* AMAppDelegate.m */,
+				0C4B1BA11593E7EE006DC25A /* AMViewController.h */,
+				0C4B1BA21593E7EE006DC25A /* AMViewController.m */,
+				0C4B1BA31593E7EE006DC25A /* AMViewController.xib */,
+				0C0FB93A1593E33F00EF06AB /* AboutMeSDK.xcodeproj */,
+				0C0FB9241593E2C100EF06AB /* Supporting Files */,
+			);
+			path = AboutMeSDKExample;
+			sourceTree = "<group>";
+		};
+		0C0FB9241593E2C100EF06AB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0C0FB9251593E2C100EF06AB /* AboutMeSDKExample-Info.plist */,
+				0C0FB9261593E2C100EF06AB /* InfoPlist.strings */,
+				0C0FB9291593E2C100EF06AB /* main.m */,
+				0C0FB92B1593E2C100EF06AB /* AboutMeSDKExample-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0C0FB93B1593E33F00EF06AB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0C0FB9421593E34000EF06AB /* libAboutMeSDK.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0C0FB9181593E2C100EF06AB /* AboutMeSDKExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C0FB9371593E2C100EF06AB /* Build configuration list for PBXNativeTarget "AboutMeSDKExample" */;
+			buildPhases = (
+				0C0FB9151593E2C100EF06AB /* Sources */,
+				0C0FB9161593E2C100EF06AB /* Frameworks */,
+				0C0FB9171593E2C100EF06AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0C0FB9441593E35700EF06AB /* PBXTargetDependency */,
+			);
+			name = AboutMeSDKExample;
+			productName = AboutMeSDKExample;
+			productReference = 0C0FB9191593E2C100EF06AB /* AboutMeSDKExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0C0FB9101593E2C100EF06AB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = AM;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = about.me;
+			};
+			buildConfigurationList = 0C0FB9131593E2C100EF06AB /* Build configuration list for PBXProject "AboutMeSDKExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0C0FB90E1593E2C100EF06AB;
+			productRefGroup = 0C0FB91A1593E2C100EF06AB /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 0C0FB93B1593E33F00EF06AB /* Products */;
+					ProjectRef = 0C0FB93A1593E33F00EF06AB /* AboutMeSDK.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				0C0FB9181593E2C100EF06AB /* AboutMeSDKExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		0C0FB9421593E34000EF06AB /* libAboutMeSDK.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libAboutMeSDK.a;
+			remoteRef = 0C0FB9411593E34000EF06AB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0C0FB9171593E2C100EF06AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C0FB9281593E2C100EF06AB /* InfoPlist.strings in Resources */,
+				0C4B1BA51593E7EE006DC25A /* AMViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0C0FB9151593E2C100EF06AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C0FB92A1593E2C100EF06AB /* main.m in Sources */,
+				0C0FB92E1593E2C100EF06AB /* AMAppDelegate.m in Sources */,
+				0C4B1BA41593E7EE006DC25A /* AMViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0C0FB9441593E35700EF06AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AboutMeSDK;
+			targetProxy = 0C0FB9431593E35700EF06AB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0C0FB9261593E2C100EF06AB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0C0FB9271593E2C100EF06AB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0C0FB9351593E2C100EF06AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0C0FB9361593E2C100EF06AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0C0FB9381593E2C100EF06AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AboutMeSDKExample/AboutMeSDKExample-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../AboutMeSDK/**",
+					"$(SRCROOT)/../Submodules/**",
+				);
+				INFOPLIST_FILE = "AboutMeSDKExample/AboutMeSDKExample-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		0C0FB9391593E2C100EF06AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AboutMeSDKExample/AboutMeSDKExample-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../AboutMeSDK/**",
+					"$(SRCROOT)/../Submodules/**",
+				);
+				INFOPLIST_FILE = "AboutMeSDKExample/AboutMeSDKExample-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0C0FB9131593E2C100EF06AB /* Build configuration list for PBXProject "AboutMeSDKExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C0FB9351593E2C100EF06AB /* Debug */,
+				0C0FB9361593E2C100EF06AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0C0FB9371593E2C100EF06AB /* Build configuration list for PBXNativeTarget "AboutMeSDKExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C0FB9381593E2C100EF06AB /* Debug */,
+				0C0FB9391593E2C100EF06AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0C0FB9101593E2C100EF06AB /* Project object */;
+}
