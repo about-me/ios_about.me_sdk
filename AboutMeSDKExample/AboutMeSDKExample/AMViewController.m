@@ -29,7 +29,7 @@
     output.text = @"Please wait, logging in...";
     
     AboutMe* aboutme = [AboutMe singleton];
-    [aboutme signInWithUsername:[username text] andPassword:[password text] onComplete:^(BOOL success) {
+    [aboutme userLogin:[username text] andPassword:[password text] onComplete:^(BOOL success) {
         if (success) {
             output.text = [aboutme.currentUser description];
         } else {

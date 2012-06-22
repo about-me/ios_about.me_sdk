@@ -20,25 +20,27 @@
 
 + (id) singleton;
 
-- (void) registerUser:(NSString *)username password:(NSString*)password email:(NSString*)email onComplete:(void(^)(NSString *accessToken, AboutMeUser *newUser))completion;
-- (void) signInWithUsername:(NSString*)username andPassword:(NSString*)password onComplete:(void(^)(BOOL success))completion;
-- (void) editUserDetails:(NSDictionary*)details onComplete:(void(^)(BOOL success))completion;
-- (void) uploadUserImage:(UIImage*)image onComplete:(void(^)(BOOL success))completion withProgress:(void(^)(double fraction))progress;
-- (void) logout:(void(^)(BOOL success))completion;
+- (void) userCreate:(NSString *)username password:(NSString*)password email:(NSString*)email onComplete:(void(^)(NSString *accessToken, AboutMeUser *newUser))completion;
+- (void) userEdit:(NSDictionary*)details onComplete:(void(^)(BOOL success))completion;
+- (void) userUpload:(UIImage*)image onComplete:(void(^)(BOOL success))completion withProgress:(void(^)(double fraction))progress;
 
-- (void) getCurrentUserProfile:(void(^)(void))completion;
-- (void) checkInAtLocation:(CLLocation *)location onComplete:(void(^)(BOOL success))completion;
+- (void) userLogin:(NSString*)username andPassword:(NSString*)password onComplete:(void(^)(BOOL success))completion;
+- (void) synchCurrentUser:(void(^)(void))completion;
+- (void) userLogout:(void(^)(BOOL success))completion;
+
+- (void) userView:(NSString *)username onComplete:(void(^)(AboutMeUser *user))completion;
+
+- (void) userCheckin:(CLLocation *)location onComplete:(void(^)(BOOL success))completion;
 
 - (void) getFavorites:(void(^)(NSArray *favoriteUsers))completion;
 - (void) favorite:(BOOL)favorite user:(AboutMeUser *)user onComplete:(void(^)(BOOL success))completion;
 
-- (void) getUserProfile:(NSString *)username onComplete:(void(^)(AboutMeUser *user))completion;
-
 - (void) getFeaturedUsers:(void(^)(NSArray *users))completion;
+- (void) getRandomUsers:(NSUInteger)count onComplete:(void(^)(NSArray *users))completion;
+
 - (void) searchByName:(NSString *)searchTerm count:(int)count offset:(int)offset onComplete:(void(^)(NSArray *users))completion;
 - (void) searchByUsername:(NSString *)username count:(int)count offset:(int)offset onComplete:(void(^)(NSArray *users))completion;
 - (void) searchByTags:(NSArray *)tags count:(int)count offset:(int)offset onComplete:(void(^)(NSArray *users))completion;
 - (void) searchWithinRadius:(NSUInteger)miles nearLocation:(CLLocation *)location withCount:(NSUInteger)count onComplete:(void(^)(NSArray *users))completion;
-- (void) getRandomUsers:(NSUInteger)count onComplete:(void(^)(NSArray *users))completion;
 
 @end

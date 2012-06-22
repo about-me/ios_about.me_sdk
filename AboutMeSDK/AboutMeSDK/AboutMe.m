@@ -167,7 +167,7 @@ typedef enum {
 
 - (void)reloginAndEnqueue:(NSString *)httpMethod atPath:(NSString*)path withParams:(NSDictionary*)params onComplete:(void(^)(NSDictionary *json))complete {
     self.authenticationToken = nil;
-    [self signInWithUsername:self.currentUsername andPassword:self.currentPassword onComplete:^(BOOL success) {
+    [self userLogin:self.currentUsername andPassword:self.currentPassword onComplete:^(BOOL success) {
         if (success) {
             NSMutableDictionary *modifiedParams = [NSMutableDictionary dictionaryWithDictionary:params];
             [modifiedParams setObject:self.authenticationToken forKey:@"token"];
@@ -298,7 +298,7 @@ typedef enum {
     self.authenticationToken = nil;
 }
 
-- (void)registerUser:(NSString *)username password:(NSString*)password email:(NSString*)email 
+- (void)userCreate:(NSString *)username password:(NSString*)password email:(NSString*)email 
           onComplete:(void(^)(NSString *accessToken, AboutMeUser *newUser))completion {
     NSString *path = [NSString stringWithFormat:@"user/create/%@", username];
     NSDictionary *params = [NSDictionary dictionaryWithObjectsAndKeys:
@@ -363,7 +363,7 @@ typedef enum {
     }];
 }
 
-- (void)signInWithUsername:(NSString*)username andPassword:(NSString*)password onComplete:(void(^)(BOOL))completion {
+- (void)userLogin:(NSString*)username andPassword:(NSString*)password onComplete:(void(^)(BOOL))completion {
     NSParameterAssert(username);
     NSParameterAssert(password);
     [self clearUserPasswordAndToken];
@@ -403,7 +403,7 @@ typedef enum {
    }];
 }
 
-- (void)getCurrentUserProfile:(void(^)(void))completion {
+- (void)synchCurrentUser:(void(^)(void))completion {
     NSParameterAssert(self.currentUsername);
     NSParameterAssert(self.authenticationToken);
     NSString *path = [NSString stringWithFormat:@"user/validate/%@", self.currentUsername];
@@ -422,7 +422,7 @@ typedef enum {
    }];
 }
 
-- (void)logout:(void(^)(BOOL success))completion {
+- (void)userLogout:(void(^)(BOOL success))completion {
     if (self.currentUser) {
         NSParameterAssert(self.currentUsername);
         NSString *path = [NSString stringWithFormat:@"user/logout/%@", self.currentUsername];
@@ -440,7 +440,7 @@ typedef enum {
     }
 }
 
-- (void)getUserProfile:(NSString *)username onComplete:(void(^)(AboutMeUser *user))completion {
+- (void)userView:(NSString *)username onComplete:(void(^)(AboutMeUser *user))completion {
     NSString *path = [NSString stringWithFormat:@"user/view/%@", username];
     [self get:path
    withParams:[NSDictionary dictionaryWithObjectsAndKeys:
@@ -472,7 +472,7 @@ typedef enum {
    }];   
 }
 
-- (void)uploadUserImage:(UIImage*)image onComplete:(void(^)(BOOL success))completion withProgress:(void(^)(double fraction))progress {
+- (void)userUpload:(UIImage*)image onComplete:(void(^)(BOOL success))completion withProgress:(void(^)(double fraction))progress {
     NSParameterAssert(self.authenticationToken);
     MKNetworkOperation *op = [self createApiOperation:@"POST"
                                                atPath:@"user/upload"
@@ -493,7 +493,7 @@ typedef enum {
     }];
 }
 
-- (void)editUserDetails:(NSDictionary*)details onComplete:(void(^)(BOOL success))completion {
+- (void)userEdit:(NSDictionary*)details onComplete:(void(^)(BOOL success))completion {
     NSParameterAssert(self.currentUsername);
     NSParameterAssert(self.authenticationToken);
     NSMutableDictionary *params = [NSMutableDictionary dictionaryWithDictionary:details];
@@ -535,7 +535,7 @@ typedef enum {
    }];
 }
 
-- (void)checkInAtLocation:(CLLocation *)location onComplete:(void(^)(BOOL success))completion {
+- (void)userCheckin:(CLLocation *)location onComplete:(void(^)(BOOL success))completion {
     NSParameterAssert(self.currentUsername);
     NSMutableDictionary *params = [NSMutableDictionary dictionaryWithObjectsAndKeys:
                                    [NSNumber numberWithDouble:location.coordinate.latitude], @"lat",
